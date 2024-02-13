@@ -1,0 +1,86 @@
+<html>
+<head>
+    <!-- Title and character encoding -->
+    <title>An Order Query Form</title>
+    <meta charset="UTF-8">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #3c5b2e;
+            max-width: 600pt;
+            padding: 72pt;
+        }
+        /* Styles for the table */
+        table {
+            margin: 0 auto; /* Center-align the table */
+            background-color: #883a65; 
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%; /* Make the table width 100% of its container */
+        }
+        /* Styles for the title */
+        .title {
+            color: #ffffff;
+            text-align:center;
+            font-size: 26pt;
+            font-weight: 700;
+            margin-bottom: 3pt;
+        }
+        /* Styles for the navigation links */
+        .nav-links {
+            color: #d5d0d0;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+        }
+        /* Additional styles */
+        .text {
+            color: white; /* Change text color to white */
+            font-size: 14pt; /* Adjust font size as needed */
+            text-align: left;
+            margin-top: 16px; /* Add some top margin for spacing */
+        }
+        label[for="status_text"] {
+            color: white; /* Change label color to white */
+        }
+        /* Styles for form elements */
+        form {
+            text-align: center;
+        }
+        input[type="text"], input[type="submit"] {
+            margin-top: 8px; /* Adjust margin for form elements */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 16pt;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table for layout -->
+    <table>
+        <tr>
+            <td>
+                <!-- Title and navigation links -->
+                <p class="title">An Order Query Application</p>
+                <p class="nav-links"> 
+                    <a href="http://os1.csi.miamioh.edu/~zankrj/OrdersQueryApplicationLinks.html"> QueryPage</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    
+    <!-- Text instruction for the form -->
+    <p class="text">Please enter one of the following: Shipped, In Process, Disputed, On Hold, Resolved, or Cancelled.</p>
+
+    <!-- Form for querying order status -->
+    <form action="./cgi-html/getOrderStatus.cgi" method="GET">
+        <label for="status_text">Status:</label>
+        <input type="text" name="status_text" id="status_text"> <!-- ID for the label -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

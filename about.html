@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>An Order Query Application</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #3c5b2e;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles for the title container */
+        .title-container {
+            background-color: #883a65;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the title */
+        .title {
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* Styles for the subtitle */
+        .subtitle {
+            color: #cccccc;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the navigation links */
+        .nav-links {
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Styles for the content */
+        .content {
+            margin-top: 20px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        /* Additional styles */
+        p {
+            color: #ffffff; /* Change text color to white */
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            max-width: 80%;
+        }
+
+        /* New style for the box */
+        .info-box {
+            background-color: #883a65;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div class="title-container">
+                    <div class="info-box">
+                <p class="title">An Order Query Application</p>
+                        <p class="nav-links">
+                            <a href="http://os1.csi.miamioh.edu/~zankrj/OrdersQueryApplicationLinks.html">QueryPage</a>
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="content">
+        <p>
+            This website is an Order Query Application that interacts with a MySQL database. The first quary allows the user to enter a shipping status. It will then return the order date, required by date, and the customerNumber for all orders with the entered shipping status. The second query allows users to select a
+            customerNumber from a dropdown menu, and retrieve relevant order information.
+            Upon submitting the query, the application fetches the data from the database and displays it in a table
+            format, showing the status and the number of orders associated with the selected customerNumber.
+        </p>
+    </div>
+</body>
+
+</html>
